@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+.homepage{
+     height:100%;
+    width:100%;
+}
+.pitch-container {
+    height:100%;
+    width:100%;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+.pitch-container .card {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+}
+
+.pitch-container .card .fas.fa-arrow-right {
+    position: absolute;
+    bottom: -100px;
+    background-color: #4e9525;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: gold;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease
+}
+
+.pitch-container .card:hover .fas.fa-arrow-right {
+    bottom: 0px;
+    opacity: 1
+}
+
+.pitch-container .card .fab.fa-envira,
+.pitch-container .fas.fa-cut,
+.pitch-container .fas.fa-people-carry {
+    font-size: 40px;
+    background-color: #0000000d;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #4e9525
+}
+
+.pitch-container .card .h4 {
+    font-weight: 700
+}
+
+.pitch-container  .content {
+    max-width: 300px
+}
+
+.pitch-container  .content .h-6 {
+    font-weight: 600
+}
+
+.pitch-container  .content .btn.btn-primary {
+    padding: 15px;
+    color: white;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none
+}
+
+.pitch-container .card:hover .fab.fa-envira,
+.pitch-container .card:hover .fas.fa-cut,
+.pitch-container .card:hover .fas.fa-people-carry {
+    color: gold;
+    background-color: #4e9525
+}
+
+/*@media (max-width:990px) {
+    .pitch-container .content {
+        max-width: 100%
+    }
+}
+
+@media (max-width:500px) {
+   
+
+    .pitch-container .card {
+        width: 100%
+    }
+
+    .pitch-container .content {
+        padding: 25px
+    }
+}*/
