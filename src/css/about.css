@@ -1,0 +1,70 @@
+.about-container{
+  flex: 1;
+  padding:5px 0px;
+}
+
+.about-titles{
+  text-decoration: underline 2px firebrick;
+  text-decoration-style:dotted;
+  -moz-text-decoration: underline 2px firebrick;
+  -moz-text-decoration-style: dotted;
+  -webkit-text-decoration: underline 2px firebrick;
+  -webkit-text-decoration-style:dotted;
+  font-family:oblique;
+  font-weight:bolder;
+}
+
+hr.sep-x{
+  position: relative;
+  display: block;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  height: 3px;
+  border:none;
+  background: linear-gradient(to right, transparent 50%, #fff 50%), linear-gradient(to right, firebrick, firebrick);
+  background-size: 1.5rem, 100%;
+  transform: rotate(-8deg);
+  transform-origin: 50% 0%;
+}
+
+hr.sep-xx {
+  position: relative;
+  display: block;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  height: 3px;
+  border:none;
+  background: linear-gradient(to right, transparent 50%, #fff 50%), linear-gradient(to right, firebrick, firebrick);
+  background-size: 1.5rem, 100%;
+  transform: rotate(8deg);
+  transform-origin: 50% 0%;
+}
+
+hr.sep-x::after {
+  font-family: 'FontAwesome';
+  /*content: '\f061     \f1cb     \f060';*/
+  white-space: pre;
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;  
+  background-image: linear-gradient(to right, firebrick, firebrick);
+  padding: 0 1em;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+hr.sep-x::before {
+  content: '';
+  width: 5rem;
+  height: 1rem;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  background-color: gold;
+}

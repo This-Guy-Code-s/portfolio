@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  z-index:1;
 }
 
 
@@ -33,6 +34,7 @@
   height: 100%;
   width: 100%;
   pointer-events: none;
+  z-index:1;
 }
 #nav-container .bg {
   position: absolute;
@@ -136,8 +138,7 @@
   display: block;
   text-transform: uppercase;
   transition: color .1s;
- -webkit-text-fill-color: azure;
-  color: azure;
+
 }
 
 #inner-main-content-container li a:hover {
@@ -181,6 +182,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
 
 .Main > div {
